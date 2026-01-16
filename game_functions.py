@@ -4,7 +4,7 @@ import math
 # function to be used by game_1: Guess the Number
 def pick_value(poss_values):
     sorted_vals = sorted(poss_values)
-    x = math.floor((sorted_vals[0] + sorted_vals[-1]) / 2)
+    x = sorted_vals[math.floor(len(sorted_vals) / 2)]
     return x
 
 # function to be used in game_2: Higher or Lower
